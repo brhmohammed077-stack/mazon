@@ -1,5 +1,5 @@
 const TOTAL_SLOTS = 30;
-const EXCLUDED_NUMBERS = new Set([17, 18, 19]); // Secret prank: these numbered slots cannot win.
+const EXCLUDED_NUMBERS = new Set([7, 8, 9]); // Secret prank: these numbered slots cannot win.
 const canvas = document.getElementById("wheel");
 const ctx = canvas.getContext("2d");
 const entriesEl = document.getElementById("entries");
