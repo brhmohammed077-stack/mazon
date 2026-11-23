@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111820">
+  <title>Amazon Lucky Draw</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">a</span><span>amazon <b>LUCKY DRAW</b></span></div>
+      <span class="live"><i></i> LIVE DRAW</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">THE MOMENT OF TRUTH</p>
+      <h1>من سيكون <span>الفائز؟</span></h1>
+      <p>أدخل أسماء المشاركين، ثم أدر العجلة لاختيار الفائز.</p>
+    </section>
+
+    <section class="layout">
+      <section class="wheel-panel">
+        <div class="wheel-wrap">
+          <div class="pointer" aria-hidden="true"></div>
+          <div class="wheel-rim">
+            <canvas id="wheel" width="760" height="760" aria-label="عجلة قرعة من 30 رقماً"></canvas>
+            <div class="hub"><span>AMAZON</span><b>DRAW</b></div>
+          </div>
+        </div>
+        <button id="spinBtn" class="spin-btn"><span>⟳</span> أدر العجلة</button>
+        <p class="spin-hint">30 خانة • اختيار عشوائي</p>
+        <div id="result" class="result" aria-live="polite">
+          <span class="result-label">النتيجة</span>
+          <strong id="winner">بانتظار القرعة...</strong>
+        </div>
+      </section>
+
+      <aside class="entries-panel">
+        <div class="panel-heading">
+          <div><p class="eyebrow">PARTICIPANTS</p><h2>أسماء المشاركين</h2></div>
+          <span id="count" class="count">0 / 30</span>
+        </div>
+        <p class="panel-desc">اكتب اسماً بجانب كل رقم. اترك الخانات الفارغة دون أسماء.</p>
+        <div id="entries" class="entries"></div>
+        <div class="panel-actions">
+          <button id="clearBtn" class="secondary-btn">مسح الأسماء</button>
+          <button id="fillBtn" class="secondary-btn">إضافة أسماء تجريبية</button>
+        </div>
+        <p class="footnote">يمكنك تعديل الأسماء قبل كل دورة.</p>
+      </aside>
+    </section>
+    <footer>Made for a little friendly competition <span>⌁</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
